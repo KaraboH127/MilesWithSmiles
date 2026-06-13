@@ -21,7 +21,7 @@ export default function SectionHeader({
   return (
     <div
       className={cn(
-        "mb-12",
+        "mb-8 md:mb-12",
         align === "center" && "text-center",
         className
       )}
@@ -37,7 +37,7 @@ export default function SectionHeader({
       {description && (
         <p
           className={cn(
-            "text-body mt-4 max-w-md leading-relaxed text-white/60",
+            "text-body mt-4 max-w-md text-sm leading-relaxed text-white/60 sm:text-base",
             align === "center" && "mx-auto"
           )}
         >

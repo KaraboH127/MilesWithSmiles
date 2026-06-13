@@ -25,9 +25,9 @@ export default function Card({
   return (
     <div
       className={cn(
-        "border rounded-md",
+        "w-full min-w-0 border rounded-md",
         variantClasses[variant],
-        padding === "md" ? "p-4" : "p-6",
+        padding === "md" ? "p-4 sm:p-5" : "p-5 sm:p-6",
         className
       )}
       {...props}

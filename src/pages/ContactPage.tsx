@@ -2,14 +2,17 @@
  * CONTACT PAGE
  */
 
-import { ArrowRight, Clock, ExternalLink, Mail, MapPin, MessageCircle, Share2, Camera, Footprints } from "lucide-react";
+import { ArrowRight, Clock, Mail, MapPin, MessageCircle, Share2, Camera, Footprints } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { SITE_CONFIG } from "../config/site";
+import { cn } from "../utils/cn";
 import {
+  ActionButtonGroup,
   Button,
   Card,
+  ContactChannelCard,
   Hero,
-  IconText,
+  IconTextBlock,
   Section,
   SectionHeader,
 } from "../components/ui";
@@ -67,58 +70,24 @@ export default function ContactPage() {
           Contact channels
         </h2>
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div className="grid w-full min-w-0 grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {CONTACT_CHANNELS.map((channel) => (
-            <a
+            <div
               key={channel.label}
-              href={channel.href}
-              target={channel.href.startsWith("mailto") ? undefined : "_blank"}
-              rel={channel.href.startsWith("mailto") ? undefined : "noopener noreferrer"}
-              className={channel.primary ? "sm:col-span-2" : ""}
-              aria-label={`${channel.label} - ${channel.sublabel}`}
+              className={cn(
+                "w-full min-w-0",
+                channel.primary && "md:col-span-2 lg:col-span-3"
+              )}
             >
-              <Card
-                variant={channel.primary ? "inverse" : "dark"}
-                padding="lg"
-                className="h-full transition-colors duration-200 hover:border-white/40"
-              >
-                <div className="flex items-start gap-6">
-                  <div
-                    className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-md border ${
-                      channel.primary ? "border-black/20" : "border-white/20"
-                    }`}
-                  >
-                    <channel.icon size={20} />
-                  </div>
-                  <div className="flex flex-1 items-center justify-between gap-4">
-                    <div>
-                      <p className="text-h3 text-lg">
-                        {channel.label}
-                        {channel.primary && (
-                          <span className="ml-2 rounded-md bg-black px-2 py-1 text-xs font-medium text-white">
-                            Primary
-                          </span>
-                        )}
-                      </p>
-                      <p className={`text-body mt-1 text-sm ${channel.primary ? "text-black/60" : "text-white/50"}`}>
-                        {channel.sublabel}
-                      </p>
-                    </div>
-                    <span className="flex shrink-0 items-center gap-1 text-sm font-semibold">
-                      {channel.cta}
-                      <ExternalLink size={16} />
-                    </span>
-                  </div>
-                </div>
-              </Card>
-            </a>
+              <ContactChannelCard {...channel} />
+            </div>
           ))}
         </div>
       </Section>
 
       <Section variant="dark" aria-labelledby="location-heading">
-        <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-2">
-          <div>
+        <div className="grid w-full min-w-0 grid-cols-1 items-start gap-8 md:gap-12 lg:grid-cols-2">
+          <div className="min-w-0">
             <SectionHeader eyebrow="Find Us" title="Where We Meet" titleId="location-heading" />
 
             <div className="space-y-6">
@@ -146,19 +115,20 @@ export default function ContactPage() {
             </div>
 
             <Card className="mt-8">
-              <p className="text-body text-sm text-white/50">
+              <p className="text-body text-sm leading-relaxed break-words text-white/50">
                 <strong className="text-white/70">First time?</strong> Show up at Soothe (Old Megalo) in Alexandra at 06:30. Look for the Miles With Smiles crew. Or join our WhatsApp community to connect with members before your first run.
               </p>
             </Card>
           </div>
 
-          <div className="min-h-80 overflow-hidden rounded-md border border-white/20 lg:h-full">
+          <div className="min-h-64 w-full min-w-0 overflow-hidden rounded-md border border-white/20 lg:min-h-80">
             <iframe
               title="Miles With Smiles meeting location - Alexandra, Johannesburg"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14345.982706684!2d28.1072!3d-26.1032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950eb3e29d1e9b%3A0x8e8acfca9f5a2a85!2sAlexandra%2C%20Johannesburg!5e0!3m2!1sen!2sza!4v1718000000000!5m2!1sen!2sza"
               width="100%"
               height="100%"
-              style={{ border: 0, minHeight: "320px" }}
+              className="min-h-64 w-full lg:min-h-80"
+              style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -169,7 +139,7 @@ export default function ContactPage() {
       </Section>
 
       <Section variant="light" aria-labelledby="contact-whatsapp-heading">
-        <div className="mx-auto max-w-4xl text-center">
+        <div className="mx-auto w-full min-w-0 max-w-4xl text-center">
           <SectionHeader
             eyebrow="Stay Connected"
             title="The Club Lives on WhatsApp"
@@ -178,12 +148,13 @@ export default function ContactPage() {
             titleId="contact-whatsapp-heading"
             className="[&_.text-caption]:text-black/40 [&_.text-h2]:text-black [&_.text-body]:text-black/60"
           />
-          <div className="flex flex-col justify-center gap-4 sm:flex-row">
+          <ActionButtonGroup>
             <Button
               href={SITE_CONFIG.registrationLink}
               target="_blank"
               rel="noopener noreferrer"
               variant="primary"
+              layout="responsive"
               aria-label="Register as a Member"
             >
               Register as a Member
@@ -194,40 +165,15 @@ export default function ContactPage() {
               target="_blank"
               rel="noopener noreferrer"
               variant="secondary"
+              layout="responsive"
               aria-label="Join WhatsApp Community"
             >
               <MessageCircle size={18} />
               Join WhatsApp Community
             </Button>
-          </div>
+          </ActionButtonGroup>
         </div>
       </Section>
     </>
-  );
-}
-
-function IconTextBlock({
-  icon: Icon,
-  title,
-  lines,
-}: {
-  icon: LucideIcon;
-  title: string;
-  lines: string[];
-}) {
-  return (
-    <div className="flex items-start gap-4">
-      <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-white/20">
-        <Icon size={18} className="text-white/60" />
-      </div>
-      <div>
-        <p className="font-semibold text-white">{title}</p>
-        {lines.map((line, i) => (
-          <p key={line} className={`text-sm ${i === 0 ? "text-white/60" : "text-white/40"}`}>
-            {line}
-          </p>
-        ))}
-      </div>
-    </div>
   );
 }

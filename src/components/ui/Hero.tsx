@@ -70,7 +70,7 @@ export default function Hero({
         {description && (
           <p
             className={cn(
-              "text-body mt-6 max-w-xl leading-relaxed text-white/60",
+              "text-body mt-6 max-w-xl text-sm leading-relaxed text-white/60 sm:text-base",
               align === "center" && "mx-auto"
             )}
           >

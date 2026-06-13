@@ -19,13 +19,13 @@ export default function IconText({
   iconClassName,
 }: IconTextProps) {
   return (
-    <span className={cn("inline-flex items-center gap-2", className)}>
+    <span className={cn("inline-flex max-w-full min-w-0 flex-wrap items-center gap-2", className)}>
       <Icon
         size={iconSizes[size]}
         className={cn("shrink-0 text-current", iconClassName)}
         aria-hidden="true"
       />
-      <span>{children}</span>
+      <span className="min-w-0 break-words">{children}</span>
     </span>
   );
 }

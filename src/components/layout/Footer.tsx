@@ -29,6 +29,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             variant="secondary"
+            layout="responsive"
             aria-label="Join Miles With Smiles WhatsApp Community"
           >
             <MessageCircle size={16} />

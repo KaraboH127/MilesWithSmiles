@@ -46,7 +46,12 @@ export default function Section({
 
   return (
     <section
-      className={cn(variantClasses[variant], spacingClasses[spacing], className)}
+      className={cn(
+        variantClasses[variant],
+        spacingClasses[spacing],
+        "w-full min-w-0 overflow-x-hidden",
+        className
+      )}
       {...props}
     >
       {content}

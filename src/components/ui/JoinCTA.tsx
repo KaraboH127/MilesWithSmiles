@@ -1,5 +1,6 @@
 import { ArrowRight, MessageCircle } from "lucide-react";
 import { SITE_CONFIG } from "../../config/site";
+import ActionButtonGroup from "./ActionButtonGroup";
 import Button from "./Button";
 import Section from "./Section";
 import SectionHeader from "./SectionHeader";
@@ -30,12 +31,13 @@ export default function JoinCTA({
           titleId={headingId}
           className="mb-8 [&_.text-caption]:text-black/40 [&_.text-h2]:text-black [&_.text-body]:text-black/60"
         />
-        <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <ActionButtonGroup>
           <Button
             href={SITE_CONFIG.registrationLink}
             target="_blank"
             rel="noopener noreferrer"
             variant="primary"
+            layout="responsive"
             aria-label={primaryLabel}
           >
             {primaryLabel}
@@ -46,12 +48,13 @@ export default function JoinCTA({
             target="_blank"
             rel="noopener noreferrer"
             variant="secondary"
+            layout="responsive"
             aria-label="Join WhatsApp Community"
           >
             <MessageCircle size={18} />
             Join WhatsApp Community
           </Button>
-        </div>
+        </ActionButtonGroup>
       </div>
     </Section>
   );
