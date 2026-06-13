@@ -229,10 +229,12 @@ export default function HomePage() {
                 />
               </div>
               {/* Floating stat card */}
-              <div className="absolute -bottom-5 -left-5 bg-white text-black p-4 rounded-xl shadow-xl">
+              {/*
+              <div className="absolute -bottom-5 -left-5 bg-white text-black p-4 rounded-xl shadow-xl place-items-center">
                 <div className="text-2xl font-black">2×</div>
                 <div className="text-xs font-medium text-black/70 mt-0.5">Weekly Runs</div>
               </div>
+              */}
             </div>
           </div>
         </div>
