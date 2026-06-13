@@ -170,7 +170,7 @@ export default function HomePage() {
 
           <div className="aspect-[3/3] overflow-hidden rounded-md">
             <img
-              src= "/src/assets/MilesWithSmilesLogo.jpg"
+              src= "/images/MilesWithSmilesLogo.jpg"
               alt="Miles With Smiles community runners in Alexandra"
               className="h-full w-full object-cover grayscale transition-all duration-300 hover:grayscale-0"
               loading="lazy"
