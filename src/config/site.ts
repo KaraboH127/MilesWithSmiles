@@ -80,7 +80,7 @@ export const IMAGES = {
    * Full-screen background image (100vh)
    * Replace with authentic club race/run photography
    */
-  hero: "https://images.pexels.com/photos/8556686/pexels-photo-8556686.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1080&w=1920",
+  hero: "/images/GalleryPicture-22.jpeg",
 
   /**
    * ABOUT PAGE — Main feature image
