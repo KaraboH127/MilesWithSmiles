@@ -9,7 +9,7 @@
 
 export const SITE_CONFIG = {
   // ─── Club Identity ───────────────────────────────────
-  name: "Miles With Smiles",
+  name: "Miles With Smiles Social Running Club",
   tagline: "Run Together. Smile Together.",
   location: "Alexandra, Johannesburg, South Africa",
   locationShort: "Alexandra, Johannesburg",
@@ -29,7 +29,7 @@ export const SITE_CONFIG = {
 
   // Social Media (update when available)
   facebook: "https://facebook.com/mileswithsmiles",
-  instagram: "https://instagram.com/mileswithsmiles",
+  instagram: "https://www.instagram.com/miles_with_smiles_src/",
   email: "hello@mileswithsmiles.co.za",
 
   // ─── Run Schedule ────────────────────────────────────
@@ -85,33 +85,38 @@ export const IMAGES = {
   /**
    * ABOUT PAGE — Main feature image
    */
-  about: "https://images.pexels.com/photos/12071514/pexels-photo-12071514.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=800&w=1200",
+  about: "/src/assets/PeopleRunning-four.jpg",
 
   /**
    * ABOUT PAGE — Secondary image
    */
-  aboutSecondary: "https://images.pexels.com/photos/17983227/pexels-photo-17983227.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=800&w=1200",
+  aboutSecondary: "/src/assets/GroupPhoto-two.jpg",
+
+  /**
+   * ABOUT PAGE — third image
+   */
+    aboutThird: "/src/assets/MilesWithSmilesLogo.jpg",
 
   /**
    * COMMUNITY RUNS — Used in schedule / run sections
    */
-  communityRun1: "https://images.pexels.com/photos/12071514/pexels-photo-12071514.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-  communityRun2: "https://images.pexels.com/photos/5319502/pexels-photo-5319502.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-  communityRun3: "https://images.pexels.com/photos/12079180/pexels-photo-12079180.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+  communityRun1: "/src/assets/GroupWalking.jpg",
+  communityRun2: "/src/assets/GroupPhoto-one.jpg",
+  communityRun3: "/src/assets/PeopleRunning-three.jpg",
 
   /**
    * HIKE IMAGERY
    */
-  hike1: "https://images.pexels.com/photos/4268105/pexels-photo-4268105.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-  hike2: "https://images.pexels.com/photos/5004995/pexels-photo-5004995.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-  hike3: "https://images.pexels.com/photos/27951269/pexels-photo-27951269.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+  hike1: "/src/assets/HikingPicture-one.jpeg",
+  hike2: "/src/assets/HikingPicture-two.jpeg",
+  hike3: "/src/assets/HikingPicture-three.jpeg",
 
   /**
    * RACE DAY IMAGERY
    */
-  raceDay1: "https://images.pexels.com/photos/17983227/pexels-photo-17983227.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-  raceDay2: "https://images.pexels.com/photos/2403528/pexels-photo-2403528.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-  raceDay3: "https://images.pexels.com/photos/8447266/pexels-photo-8447266.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+  raceDay1: "/src/assets/PeopleRunning-one.jpg",
+  raceDay2: "/src/assets/PeopleRunning-two.jpg",
+  raceDay3: "/src/assets/PeopleRunning-four.jpg",
 
   /**
    * BLOG ARTICLE THUMBNAILS
@@ -129,64 +134,114 @@ export const IMAGES = {
    */
   gallery: [
     {
-      src: "https://images.pexels.com/photos/12071514/pexels-photo-12071514.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=800&w=1200",
+      src: "/src/assets/PeopleRunning-three.jpg",
       category: "Community Runs",
-      alt: "Group of runners in a community run",
+      alt: "Smilers",
     },
     {
-      src: "https://images.pexels.com/photos/8556686/pexels-photo-8556686.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=800&w=1200",
+      src: "/src/assets/GalleryPicture-one.jpeg",
+      category: "Hikes",
+      alt: "Smilers at a hike",
+    },
+    {
+      src: "/src/assets/GalleryPicture-three.jpeg",
+      category: "Hikes",
+      alt: "Smilers at a hike",
+    },
+    {
+      src: "/src/assets/GalleryPicture-four.jpeg",
+      category: "Hikes",
+      alt: "Smilers at a hike",
+    },
+    {
+      src: "/src/assets/GalleryPicture-eleven.jpeg",
       category: "Community Runs",
-      alt: "Diverse group running together",
+      alt: "Smilers",
     },
     {
-      src: "https://images.pexels.com/photos/17983227/pexels-photo-17983227.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=800&w=1200",
-      category: "Race Days",
-      alt: "Runners celebrating at a race event",
-    },
-    {
-      src: "https://images.pexels.com/photos/4268105/pexels-photo-4268105.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=800&w=1200",
-      category: "Hikes",
-      alt: "Community members hiking on a trail",
-    },
-    {
-      src: "https://images.pexels.com/photos/2403528/pexels-photo-2403528.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=800&w=1200",
-      category: "Race Days",
-      alt: "Marathon runners smiling",
-    },
-    {
-      src: "https://images.pexels.com/photos/5004995/pexels-photo-5004995.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=800&w=1200",
-      category: "Hikes",
+      src: "/src/assets/GalleryPicture-eight.jpeg",
+      category: "Community Runs",
       alt: "Group hiking on mountain trail",
     },
     {
-      src: "https://images.pexels.com/photos/5319502/pexels-photo-5319502.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=800&w=1200",
-      category: "Community Runs",
-      alt: "People running on the road together",
-    },
-    {
-      src: "https://images.pexels.com/photos/8447266/pexels-photo-8447266.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=800&w=1200",
-      category: "Special Events",
-      alt: "Runners giving thumbs up at event",
-    },
-    {
-      src: "https://images.pexels.com/photos/12079180/pexels-photo-12079180.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=800&w=1200",
-      category: "Race Days",
-      alt: "Runners on a bridge at a race",
-    },
-    {
-      src: "https://images.pexels.com/photos/27951269/pexels-photo-27951269.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=800&w=1200",
+      src: "/src/assets/GalleryPicture-two.jpeg",
       category: "Hikes",
-      alt: "Friends hiking on mountain trail",
+      alt: "Smilers at a hike",
     },
     {
-      src: "https://images.pexels.com/photos/31833583/pexels-photo-31833583.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=800&w=1200",
-      category: "Special Events",
-      alt: "Happy participants at a marathon event",
-    },
-    {
-      src: "https://images.pexels.com/photos/36717054/pexels-photo-36717054.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=800&w=1200",
+      src: "/src/assets/GalleryPicture-nine.jpeg",
       category: "Community Runs",
-      alt: "Silhouetted runners at sunrise",
+      alt: "Smilers",
+    },
+    {
+      src: "/src/assets/GalleryPicture-ten.jpeg",
+      category: "Community Runs",
+      alt: "Smilers",
+    },
+    {
+      src: "/src/assets/GalleryPicture-seven.jpeg",
+      category: "Community Runs",
+      alt: "Smilers",
+    },
+    {
+      src: "/src/assets/GalleryPicture-five.jpeg",
+      category: "Community Runs",
+      alt: "Smilers",
+    },
+    {
+      src: "/src/assets/GalleryPicture-six.jpeg",
+      category: "Community Runs",
+      alt: "Smilers",
+    },
+    {
+      src: "/src/assets/GalleryPicture-12.jpeg",
+      category: "Hikes",
+      alt: "Smilers at a hike",
+    },
+    {
+      src: "/src/assets/GalleryPicture-13.jpeg",
+      category: "Hikes",
+      alt: "Smilers at a hike",
+    },
+    {
+      src: "/src/assets/GalleryPicture-14.jpeg",
+      category: "Hikes",
+      alt: "Smilers at a hike",
+    },
+    {
+      src: "/src/assets/GalleryPicture-15.jpeg",
+      category: "Hikes",
+      alt: "Smilers at a hike",
+    },
+    {
+      src: "/src/assets/GalleryPicture-16.jpeg",
+      category: "Hikes",
+      alt: "Smilers at a hike",
+    },
+    {
+      src: "/src/assets/GalleryPicture-17.jpeg",
+      category: "Hikes",
+      alt: "Smilers at a hike",
+    },
+    {
+      src: "/src/assets/GalleryPicture-18.jpeg",
+      category: "Community Runs",
+      alt: "Smilers",
+    },
+    {
+      src: "/src/assets/GalleryPicture-19.jpeg",
+      category: "Community Runs",
+      alt: "Smilers",
+    },
+    {
+      src: "/src/assets/GalleryPicture-20.jpg",
+      category: "Community Runs",
+      alt: "Smilers",
+    },
+    {
+      src: "/src/assets/GalleryPicture-21.jpeg",
+      category: "Community Runs",
+      alt: "Smilers",
     },
   ],
 };

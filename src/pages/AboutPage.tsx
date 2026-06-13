@@ -83,7 +83,7 @@ export default function AboutPage() {
             />
             <div className="space-y-4 text-body leading-relaxed text-white/60">
               <p>
-                Miles With Smiles did not begin in a boardroom or a gym. It began on the streets of Alexandra — one of Johannesburg&apos;s most vibrant and resilient communities — with a simple belief: that running could bring people together.
+                Miles With Smiles Social Run Club did not begin in a boardroom or a gym. It began on the streets of Alexandra — one of Johannesburg&apos;s most vibrant and resilient communities — with a simple belief: that running could bring people together.
               </p>
               <p>
                 A small group of passionate runners came together, drawn not just by the love of running, but by a vision of what community could look like when people showed up for each other consistently.
@@ -100,7 +100,7 @@ export default function AboutPage() {
           <div className="space-y-4">
             <div className="aspect-video overflow-hidden rounded-md">
               <img
-                src={IMAGES.about}
+                src={IMAGES.aboutSecondary}
                 alt="Community runners at Miles With Smiles"
                 className="h-full w-full object-cover grayscale transition-all duration-300 hover:grayscale-0"
                 loading="lazy"
@@ -117,7 +117,7 @@ export default function AboutPage() {
               </div>
               <div className="aspect-square overflow-hidden rounded-md">
                 <img
-                  src={IMAGES.hike1}
+                  src={IMAGES.about}
                   alt="Community hike with Miles With Smiles"
                   className="h-full w-full object-cover grayscale transition-all duration-300 hover:grayscale-0"
                   loading="lazy"
@@ -170,9 +170,9 @@ export default function AboutPage() {
 
       <Section variant="dark" aria-labelledby="why-run-heading">
         <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
-          <div className="aspect-video overflow-hidden rounded-md">
+          <div className="aspect-video overflow-hidden rounded-md h-full w-full">
             <img
-              src={IMAGES.aboutSecondary}
+              src={IMAGES.aboutThird}
               alt="Miles With Smiles runners after a race"
               className="h-full w-full object-cover grayscale transition-all duration-300 hover:grayscale-0"
               loading="lazy"

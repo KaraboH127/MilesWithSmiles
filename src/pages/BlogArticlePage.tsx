@@ -81,7 +81,7 @@ export default function BlogArticlePage() {
           />
 
           <aside className="space-y-6">
-            <Card variant="inverse" padding="lg" className="sticky top-24 text-center">
+            <Card variant="inverse" padding="lg" className="sticky top-4 text-center">
               <IconText icon={Footprints} className="mb-4 justify-center" />
               <h3 className="text-h3 mb-2 text-black">Run With Us</h3>
               <p className="text-body mb-6 text-xs leading-relaxed text-black/60">

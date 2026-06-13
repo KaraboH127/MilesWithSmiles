@@ -154,7 +154,7 @@ export default function HomePage() {
               titleId="about-heading"
             />
             <p className="text-body mb-4 leading-relaxed text-white/60">
-              Miles With Smiles was born on the streets of Alexandra — a neighbourhood brimming with energy, ambition, and untapped potential. We started as a small group of friends who believed that running could do more than build fitness. We believed it could build community.
+              Miles With Smiles Social Run Club was born on the streets of Alexandra — a neighbourhood brimming with energy, ambition, and untapped potential. We started as a small group of friends who believed that running could do more than build fitness. We believed it could build community.
             </p>
             <p className="text-body mb-8 leading-relaxed text-white/60">
               Today, we gather every Wednesday and Saturday to run together, support each other, and show Alexandra that community strength starts with showing up. We are inclusive, consistent, and community-first. No experience required. All paces welcome.
@@ -168,9 +168,9 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="aspect-[4/3] overflow-hidden rounded-md">
+          <div className="aspect-[3/3] overflow-hidden rounded-md">
             <img
-              src={IMAGES.communityRun1}
+              src= "/src/assets/MilesWithSmilesLogo.jpg"
               alt="Miles With Smiles community runners in Alexandra"
               className="h-full w-full object-cover grayscale transition-all duration-300 hover:grayscale-0"
               loading="lazy"
