@@ -85,38 +85,38 @@ export const IMAGES = {
   /**
    * ABOUT PAGE — Main feature image
    */
-  about: "src/assets/PeopleRunning-four.jpg",
+  about: "../assets/PeopleRunning-four.jpg",
 
   /**
    * ABOUT PAGE — Secondary image
    */
-  aboutSecondary: "src/assets/GroupPhoto-two.jpg",
+  aboutSecondary: "../assets/GroupPhoto-two.jpg",
 
   /**
    * ABOUT PAGE — third image
    */
-    aboutThird: "/src/assets/MilesWithSmilesLogo.jpg",
+    aboutThird: "../assets/MilesWithSmilesLogo.jpg",
 
   /**
    * COMMUNITY RUNS — Used in schedule / run sections
    */
-  communityRun1: "src/assets/GroupWalking.jpg",
+  communityRun1: "../assets/GroupWalking.jpg",
   communityRun2: "src/assets/GroupPhoto-one.jpg",
   communityRun3: "src/assets/PeopleRunning-three.jpg",
 
   /**
    * HIKE IMAGERY
    */
-  hike1: "src/assets/HikingPicture-one.jpeg",
-  hike2: "src/assets/HikingPicture-two.jpeg",
-  hike3: "src/assets/HikingPicture-three.jpeg",
+  hike1: "../assets/HikingPicture-one.jpeg",
+  hike2: "../assets/HikingPicture-two.jpeg",
+  hike3: "../assets/HikingPicture-three.jpeg",
 
   /**
    * RACE DAY IMAGERY
    */
-  raceDay1: "src/assets/PeopleRunning-one.jpg",
-  raceDay2: "src/assets/PeopleRunning-two.jpg",
-  raceDay3: "src/assets/PeopleRunning-four.jpg",
+  raceDay1: "../assets/PeopleRunning-one.jpg",
+  raceDay2: "../assets/PeopleRunning-two.jpg",
+  raceDay3: "../assets/PeopleRunning-four.jpg",
 
   /**
    * BLOG ARTICLE THUMBNAILS
@@ -134,112 +134,112 @@ export const IMAGES = {
    */
   gallery: [
     {
-      src: "src/assets/PeopleRunning-three.jpg",
+      src: "../assets/PeopleRunning-three.jpg",
       category: "Community Runs",
       alt: "Smilers",
     },
     {
-      src: "src/assets/GalleryPicture-one.jpeg",
+      src: "../assets/GalleryPicture-one.jpeg",
       category: "Hikes",
       alt: "Smilers at a hike",
     },
     {
-      src: "src/assets/GalleryPicture-three.jpeg",
+      src: "../assets/GalleryPicture-three.jpeg",
       category: "Hikes",
       alt: "Smilers at a hike",
     },
     {
-      src: "src/assets/GalleryPicture-four.jpeg",
+      src: "../assets/GalleryPicture-four.jpeg",
       category: "Hikes",
       alt: "Smilers at a hike",
     },
     {
-      src: "src/assets/GalleryPicture-eleven.jpeg",
+      src: "../assets/GalleryPicture-eleven.jpeg",
       category: "Community Runs",
       alt: "Smilers",
     },
     {
-      src: "src/assets/GalleryPicture-eight.jpeg",
+      src: "../assets/GalleryPicture-eight.jpeg",
       category: "Community Runs",
       alt: "Group hiking on mountain trail",
     },
     {
-      src: "src/assets/GalleryPicture-two.jpeg",
+      src: "../assets/GalleryPicture-two.jpeg",
       category: "Hikes",
       alt: "Smilers at a hike",
     },
     {
-      src: "src/assets/GalleryPicture-nine.jpeg",
+      src: "../assets/GalleryPicture-nine.jpeg",
       category: "Community Runs",
       alt: "Smilers",
     },
     {
-      src: "src/assets/GalleryPicture-ten.jpeg",
+      src: "../assets/GalleryPicture-ten.jpeg",
       category: "Community Runs",
       alt: "Smilers",
     },
     {
-      src: "src/assets/GalleryPicture-seven.jpeg",
+      src: "../assets/GalleryPicture-seven.jpeg",
       category: "Community Runs",
       alt: "Smilers",
     },
     {
-      src: "src/assets/GalleryPicture-five.jpeg",
+      src: "../assets/GalleryPicture-five.jpeg",
       category: "Community Runs",
       alt: "Smilers",
     },
     {
-      src: "src/assets/GalleryPicture-six.jpeg",
+      src: "../assets/GalleryPicture-six.jpeg",
       category: "Community Runs",
       alt: "Smilers",
     },
     {
-      src: "src/assets/GalleryPicture-12.jpeg",
+      src: "../assets/GalleryPicture-12.jpeg",
       category: "Hikes",
       alt: "Smilers at a hike",
     },
     {
-      src: "src/assets/GalleryPicture-13.jpeg",
+      src: "../assets/GalleryPicture-13.jpeg",
       category: "Hikes",
       alt: "Smilers at a hike",
     },
     {
-      src: "src/assets/GalleryPicture-14.jpeg",
+      src: "../assets/GalleryPicture-14.jpeg",
       category: "Hikes",
       alt: "Smilers at a hike",
     },
     {
-      src: "src/assets/GalleryPicture-15.jpeg",
+      src: "../assets/GalleryPicture-15.jpeg",
       category: "Hikes",
       alt: "Smilers at a hike",
     },
     {
-      src: "src/assets/GalleryPicture-16.jpeg",
+      src: "../assets/GalleryPicture-16.jpeg",
       category: "Hikes",
       alt: "Smilers at a hike",
     },
     {
-      src: "src/assets/GalleryPicture-17.jpeg",
+      src: "../assets/GalleryPicture-17.jpeg",
       category: "Hikes",
       alt: "Smilers at a hike",
     },
     {
-      src: "src/assets/GalleryPicture-18.jpeg",
+      src: "../assets/GalleryPicture-18.jpeg",
       category: "Community Runs",
       alt: "Smilers",
     },
     {
-      src: "src/assets/GalleryPicture-19.jpeg",
+      src: "../assets/GalleryPicture-19.jpeg",
       category: "Community Runs",
       alt: "Smilers",
     },
     {
-      src: "src/assets/GalleryPicture-20.jpg",
+      src: "../assets/GalleryPicture-20.jpg",
       category: "Community Runs",
       alt: "Smilers",
     },
     {
-      src: "src/assets/GalleryPicture-21.jpeg",
+      src: "../assets/GalleryPicture-21.jpeg",
       category: "Community Runs",
       alt: "Smilers",
     },
