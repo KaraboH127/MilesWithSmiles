@@ -98,8 +98,8 @@ export default function HomePage() {
         className="min-h-[600px]"
         footer={
           <div className="absolute bottom-24 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-2">
-            <span className="text-caption uppercase tracking-widest">Scroll</span>
-            <ArrowDown size={16} className="text-white/30" />
+            {/*<span className="text-caption uppercase tracking-widest">Scroll</span>
+            <ArrowDown size={16} className="text-white/30" />*/}
           </div>
         }
       >
