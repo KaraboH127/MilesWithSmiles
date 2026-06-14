@@ -47,13 +47,13 @@ const CONTACT_CHANNELS: {
     href: SITE_CONFIG.instagram,
     cta: "Follow on Instagram",
   },
-  {
+  /*{
     icon: Mail,
     label: "Email",
     sublabel: SITE_CONFIG.email,
     href: `mailto:${SITE_CONFIG.email}`,
     cta: "Send an Email",
-  },
+  }*/,
 ];
 
 export default function ContactPage() {
