@@ -161,7 +161,7 @@ export const IMAGES = {
     {
       src: "/images/GalleryPicture-eight.jpeg",
       category: "Community Runs",
-      alt: "Group hiking on mountain trail",
+      alt: "Smilers",
     },
     {
       src: "/images/GalleryPicture-two.jpeg",

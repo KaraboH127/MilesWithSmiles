@@ -124,7 +124,7 @@ export default function ContactPage() {
           <div className="min-h-64 w-full min-w-0 overflow-hidden rounded-md border border-white/20 lg:min-h-80">
             <iframe
               title="Miles With Smiles meeting location - Alexandra, Johannesburg"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14345.982706684!2d28.1072!3d-26.1032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950eb3e29d1e9b%3A0x8e8acfca9f5a2a85!2sAlexandra%2C%20Johannesburg!5e0!3m2!1sen!2sza!4v1718000000000!5m2!1sen!2sza"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1745.546230068433!2d28.095718201784358!3d-26.09677574617285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e957382d0647ecb%3A0xd768c975658272de!2sSOOTHE!5e0!3m2!1sen!2sza!4v1781430707233!5m2!1sen!2sza"
               width="100%"
               height="100%"
               className="min-h-64 w-full lg:min-h-80"

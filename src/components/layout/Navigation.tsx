@@ -47,7 +47,7 @@ export default function Navigation() {
               Miles With Smiles
             </span>
             <span className="text-caption text-[10px] tracking-widest">
-              Social Running Club
+              Social Run Club
             </span>
           </Link>
 

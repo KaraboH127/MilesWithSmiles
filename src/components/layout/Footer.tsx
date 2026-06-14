@@ -46,7 +46,7 @@ export default function Footer() {
                 Miles With Smiles
               </span>
               <span className="text-caption text-xs tracking-widest">
-                Running Club
+                Social Run Club
               </span>
             </div>
             <p className="text-body mb-6 max-w-xs text-sm leading-relaxed text-white/50">
@@ -116,7 +116,7 @@ export default function Footer() {
                   Instagram
                 </a>
               </li>
-              <li>
+              {/*<li>
                 <a
                   href={`mailto:${SITE_CONFIG.email}`}
                   className="group flex items-center gap-2 text-sm text-white/50 transition-colors hover:text-white"
@@ -125,7 +125,7 @@ export default function Footer() {
                   <Mail size={16} className="text-white/40 group-hover:text-white" />
                   Email Us
                 </a>
-              </li>
+              </li>*/}
             </ul>
 
             <div className="mt-8 border-t border-white/20 pt-6">
@@ -143,7 +143,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/20 pt-8 sm:flex-row">
           <p className="text-xs text-white/30">
-            &copy; {currentYear} Miles With Smiles Running Club. Alexandra, Johannesburg.
+            &copy; {currentYear} Miles With Smiles Social Run Club. Alexandra, Johannesburg.
           </p>
           <p className="text-xs text-white/20">
             Built for community. Run together. Smile together.

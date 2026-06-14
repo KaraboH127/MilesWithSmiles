@@ -94,7 +94,7 @@ export default function HomePage() {
             <span className="text-white/70">Smile Together.</span>
           </>
         }
-        description="Miles With Smiles is a community running club based in Alexandra, bringing people together through fitness, friendship, consistency, and shared miles."
+        description="Miles With Smiles Social Run Club is a community running club based in Alexandra, bringing people together through fitness, friendship, consistency, and shared miles."
         className="min-h-[600px]"
         footer={
           <div className="absolute bottom-24 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-2">

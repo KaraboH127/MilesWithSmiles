@@ -92,7 +92,7 @@ export default function AboutPage() {
                 Word spread. Friends brought friends. Strangers became training partners. Training partners became family. Each Wednesday and Saturday morning, the group grew through authentic community.
               </p>
               <p>
-                Today, Miles With Smiles represents a movement of people who believe in the power of showing up — for yourself, for your community, and for the miles ahead.
+                Today, Miles With Smiles Social Run Club represents a movement of people who believe in the power of showing up — for yourself, for your community, and for the miles ahead.
               </p>
             </div>
           </div>
