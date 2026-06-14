@@ -25,10 +25,10 @@ export const SITE_CONFIG = {
    * Google Form Registration Link
    * Replace this value to update ALL "Join" buttons site-wide
    */
-  registrationLink: "https://forms.google.com/example",
+  registrationLink: "https://forms.gle/ZYUX226aVmFgXdCe6",
 
   // Social Media (update when available)
-  facebook: "https://facebook.com/mileswithsmiles",
+  facebook: "https://www.facebook.com/profile.php?id=61570772859468&mibextid=wwXIfr&mibextid=wwXIfr",
   instagram: "https://www.instagram.com/miles_with_smiles_src/",
   email: "hello@mileswithsmiles.co.za",
 
