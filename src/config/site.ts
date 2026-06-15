@@ -110,6 +110,7 @@ export const IMAGES = {
   hike1: "/images/HikingPicture-one.jpeg",
   hike2: "/images/HikingPicture-two.jpeg",
   hike3: "/images/HikingPicture-three.jpeg",
+  hike4: "/images/hike4.jpeg",
 
   /**
    * RACE DAY IMAGERY

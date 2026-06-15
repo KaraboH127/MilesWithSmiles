@@ -159,7 +159,7 @@ export default function SchedulePage() {
 
           <div className="aspect-[4/3] overflow-hidden rounded-md">
             <img
-              src={IMAGES.hike2}
+              src={IMAGES.hike4}
               alt="Miles With Smiles community hike"
               className="h-full w-full object-cover grayscale transition-all duration-300 hover:grayscale-0"
               loading="lazy"
@@ -211,9 +211,9 @@ function DateList({
       <IconText icon={Calendar} className="mb-6 text-lg font-bold">
         {title}
       </IconText>
-      <p className="text-caption mb-4 normal-case tracking-normal text-white/40">
+      {/*<p className="text-caption mb-4 normal-case tracking-normal text-white/40">
         Dates are generated automatically and always stay current.
-      </p>
+      </p>*/}
       <div className="space-y-3">
         {dates.map((date, i) => (
           <Card
