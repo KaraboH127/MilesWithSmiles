@@ -45,6 +45,7 @@ export default function Hero({
             alt=""
             className="h-full w-full object-cover object-center grayscale"
             loading="eager"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-black/80" />
         </div>
