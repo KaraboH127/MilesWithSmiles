@@ -1,6 +1,7 @@
 /**
  * CONTACT PAGE
  */
+import FirstTimerCard from "../components/ui/FirstTimerCard";
 import SEOHead from '../components/SEOHead';
 import { ArrowRight, Clock, Mail, MapPin, MessageCircle, Share2, Camera, Footprints } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
@@ -119,11 +120,9 @@ export default function ContactPage() {
               />
             </div>
 
-            <Card className="mt-8">
-              <p className="text-body text-sm leading-relaxed break-words text-white/50">
-                <strong className="text-white/70">First time?</strong> Show up at Soothe (Old Megalo) in Alexandra at 06:30. Look for the Miles With Smiles crew. Or join our WhatsApp community to connect with members before your first run.
-              </p>
-            </Card>
+            <Section spacing="compact" containerSize="narrow">
+              <FirstTimerCard />
+            </Section>
           </div>
 
           <div className="min-h-64 w-full min-w-0 overflow-hidden rounded-md border border-white/20 lg:min-h-80">

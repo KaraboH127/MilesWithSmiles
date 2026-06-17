@@ -1,6 +1,7 @@
 /**
  * SCHEDULE PAGE
  */
+import FirstTimerCard from "../components/ui/FirstTimerCard";
 import SEOHead from '../components/SEOHead';
 import { Calendar, Clock, MapPin, MessageCircle } from "lucide-react";
 import { SITE_CONFIG, IMAGES } from "../config/site";
@@ -83,6 +84,10 @@ export default function SchedulePage() {
 
           <DateList title="Upcoming Wednesday Runs" dates={wedDates} distance="10km" />
         </div>
+      </Section>
+
+      <Section spacing="compact" containerSize="narrow">
+        <FirstTimerCard />
       </Section>
 
       <Section variant="dark" className="border-b border-white/20" aria-labelledby="saturday-heading">

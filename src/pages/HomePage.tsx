@@ -2,6 +2,7 @@
  * HOME PAGE
  * Hero → Social proof → About → Schedule → Benefits → WhatsApp → Gallery → Join CTA
  */
+import FirstTimerCard from "../components/ui/FirstTimerCard";
 import SEOHead from '../components/SEOHead';
 import { Link } from "react-router-dom";
 import {
@@ -256,6 +257,12 @@ export default function HomePage() {
             View full schedule
             <ChevronRight size={16} />
           </Link>
+        </div>
+      </Section>
+
+      <Section spacing="compact">
+        <div className="mx-auto max-w-xl">
+          <FirstTimerCard />
         </div>
       </Section>
 
