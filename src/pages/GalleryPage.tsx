@@ -53,7 +53,7 @@ export default function GalleryPage() {
   return (
     <>
       <SEOHead
-        title="Gallery | Miles With Smiles Social Running Club Alexandra"
+        title="Gallery | Miles With Smiles Social Run Club Alexandra"
         description="Photos from our weekly runs, monthly hikes, and community events in Alexandra, Johannesburg."
         canonical="/gallery"
       />

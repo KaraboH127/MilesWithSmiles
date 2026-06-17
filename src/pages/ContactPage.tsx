@@ -61,7 +61,7 @@ export default function ContactPage() {
   return (
     <>
       <SEOHead
-        title="Contact | Miles With Smiles Social Running Club Alexandra"
+        title="Contact | Miles With Smiles Social Run Club Alexandra"
         description="Get in touch with Miles With Smiles. Join our WhatsApp community, follow us on social media, or show up at Soothe (Old Megalo) in Alexandra."
         canonical="/contact"
       />

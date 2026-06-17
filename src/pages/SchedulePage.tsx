@@ -32,7 +32,7 @@ export default function SchedulePage() {
   return (
     <>
       <SEOHead
-        title="Run Schedule | Miles With Smiles Alexandra — Wednesday 10km, Saturday 5km"
+        title="Run Schedule | Miles With Smiles Social Run Club Alexandra — Wednesday 10km, Saturday 5km"
         description="Join our weekly runs in Alexandra. Wednesday 10km and Saturday 5km community runs from Soothe (Old Megalo). Meet at 06:30, run starts 07:00."
         canonical="/schedule"
       />

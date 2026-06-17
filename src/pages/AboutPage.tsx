@@ -67,7 +67,7 @@ export default function AboutPage() {
   return (
     <>
       <SEOHead
-        title="About Us | Miles With Smiles Social Running Club Alexandra"
+        title="About Us | Miles With Smiles Social Run Club Alexandra"
         description="Learn about Miles With Smiles Social Run Club — born on the streets of Alexandra, built on community, consistency, and shared miles."
         canonical="/about"
       />

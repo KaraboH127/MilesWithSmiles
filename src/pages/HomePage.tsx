@@ -80,7 +80,7 @@ export default function HomePage() {
   return (
     <>
       <SEOHead
-        title="Miles With Smiles | Social Running Club in Alexandra, Johannesburg"
+        title="Miles With Smiles | Social Run Club in Alexandra, Johannesburg"
         description="Join Miles With Smiles, a social running club in Alexandra, Johannesburg. Weekly 5km and 10km group runs, monthly hikes, and a supportive community for all levels."
         canonical="/"
       />
