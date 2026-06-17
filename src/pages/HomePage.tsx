@@ -132,15 +132,19 @@ export default function HomePage() {
         </div>
       </Hero>
 
-      <Section variant="dark" spacing="none" className="border-y border-white/20 py-4">
-        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm text-white/60">
-          <IconText icon={MapPin}>Alexandra, Johannesburg</IconText>
-          <span className="hidden h-4 w-px bg-white/20 sm:block" />
-          <IconText icon={Footprints}>Weekly Community Runs</IconText>
-          <span className="hidden h-4 w-px bg-white/20 sm:block" />
-          <IconText icon={Mountain}>Monthly Hikes</IconText>
-          <span className="hidden h-4 w-px bg-white/20 sm:block" />
-          <IconText icon={Users}>Open To Everyone</IconText>
+     <Section variant="dark" spacing="none" className="border-y border-white/20 py-6">
+        <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 text-center">
+          {[
+            { value: "60+", label: "Active members" },
+            { value: "2×", label: "Weekly runs" },
+            { value: "Free", label: "Always, forever" },
+            { value: "All paces", label: "Welcome here" },
+          ].map(({ value, label }) => (
+            <div key={label}>
+              <p className="text-2xl font-black text-white">{value}</p>
+              <p className="mt-1 text-xs text-white/50">{label}</p>
+            </div>
+          ))}
         </div>
       </Section>
 
