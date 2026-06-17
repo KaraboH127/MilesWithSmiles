@@ -291,23 +291,20 @@ export default function HomePage() {
             titleId="whatsapp-heading"
           />
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
-            <Button
-              href={SITE_CONFIG.whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="secondary"
-            >
-              <MessageCircle size={18} />
-              Join WhatsApp Community
-            </Button>
-            <Button
-              href={SITE_CONFIG.registrationLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="primary"
-            >
-              Register as a Member
-            </Button>
+            <Button href={SITE_CONFIG.whatsappLink}
+            target="_blank" rel="noopener noreferrer"
+            variant="secondary"
+            aria-label="Join our WhatsApp Community">
+            <MessageCircle size={18} />
+            Join WhatsApp Community
+          </Button>
+          <Button href={SITE_CONFIG.registrationLink}
+            target="_blank" rel="noopener noreferrer"
+            variant="primary"
+            aria-label="Register as a member">
+            Register as a Member
+            <ArrowRight size={18} />
+          </Button>
           </div>
         </div>
       </Section>
