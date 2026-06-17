@@ -25,7 +25,7 @@
   --color-black: #000000;
   --color-white: #ffffff;
 
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+--font-sans: "Inter Variable", "Inter", system-ui, -apple-system, sans-serif;
 
   scroll-behavior: smooth;
 }
