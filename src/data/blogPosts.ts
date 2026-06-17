@@ -61,8 +61,11 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>When you run in Alexandra, you're doing more than improving your own fitness. You're part of a visible, public demonstration that community health is a priority. You inspire others. You show young people in the community what is possible. You contribute to a culture of wellbeing that Alexandra deserves.</p>
 
       <h2>Ready to Join?</h2>
-      <p>Miles With Smiles runs every Wednesday (10km) and Saturday (5km) from Soothe (Old Megalo) in Alexandra, meeting at 06:30 with runs starting at 07:00. Registration is free and open to everyone.</p>
-    `,
+      <p>Miles With Smiles runs every Wednesday (10km) and Saturday (5km). View our full
+      <a href="/schedule">run schedule</a> for upcoming dates. Registration is free and open to
+      everyone — or read about <a href="/blog/how-to-start-running-as-a-beginner">how to start
+      running as a beginner</a> before your first session.</p>
+      `,
   },
   {
     slug: "benefits-of-group-running",
@@ -97,7 +100,8 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>Running in a group — especially in early morning hours — provides a natural layer of safety and security. Our community looks out for each other, and running together means no one is ever alone on the road.</p>
 
       <h2>The Miles With Smiles Difference</h2>
-      <p>At Miles With Smiles, we've built a running community that maximises every one of these benefits. Our Wednesday and Saturday runs aren't just exercise sessions — they're social events, accountability partners, and community celebrations rolled into one. Join us and experience the difference for yourself.</p>
+      <p>At Miles With Smiles, we've built a running community that maximises every one of these benefits. Our Wednesday and Saturday runs aren't just exercise sessions — they're social events, accountability partners, and community celebrations rolled into one. Join us and experience the difference for yourself. View our full
+        <a href="/schedule">run schedule</a> for upcoming dates.</p>
     `,
   },
   {
@@ -137,7 +141,8 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>Our community has helped dozens of first-time runners complete their first kilometre, their first 5km, and beyond. We'll do the same for you.</p>
 
       <h2>Be Patient</h2>
-      <p>Running fitness takes time. Most people see significant improvements between weeks 4 and 8. The first two weeks are the hardest. Don't judge your long-term potential by your day-one performance. Stay consistent, trust the process, and keep showing up.</p>
+      <>Running fitness takes time. Most people see significant improvements between weeks 4 and 8. The first two weeks are the hardest. Don't judge your long-term potential by your day-one performance. Stay consistent, trust the process, and keep showing up. View our full
+        <a href="/schedule">run schedule</a> for upcoming dates.</p>
     `,
   },
   {
@@ -182,7 +187,8 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>Remind yourself: every kilometre is progress. Every step is an achievement. The finish line is closer than you think.</p>
 
       <h2>Join Us for Your First 5km</h2>
-      <p>Miles With Smiles runs a 5km every Saturday from Soothe (Old Megalo) in Alexandra, starting at 07:00. It's the perfect, supportive environment to complete your first 5km. Register as a member and join us this Saturday.</p>
+      <>Miles With Smiles runs a 5km every Saturday from Soothe (Old Megalo) in Alexandra, starting at 07:00. It's the perfect, supportive environment to complete your first 5km. Register as a member and join us this Saturday. View our full
+        <a href="/schedule">run schedule</a> for upcoming dates.</p>
     `,
   },
   {
@@ -218,7 +224,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <h2>6. Build Community Around Your Running</h2>
       <p>This is arguably the most important habit of all. Running alone relies entirely on internal motivation. Running within a community creates external accountability, social obligation, and — crucially — genuine enjoyment. When running becomes the thing you do with your people, it stops feeling like exercise and starts feeling like something you would never want to miss.</p>
-      <p>This is why Miles With Smiles exists. We've made community the foundation of our running culture. Join us and discover how much easier consistency becomes when you run with people who care.</p>
+      <>This is why Miles With Smiles exists. We've made community the foundation of our running culture. Join us and discover how much easier consistency becomes when you run with people who care. View our full
+        <a href="/schedule">run schedule</a> for upcoming dates.</p>
     `,
   },
   {
@@ -255,7 +262,8 @@ export const BLOG_POSTS: BlogPost[] = [
       <h2>The Miles With Smiles Effect</h2>
       <p>At Miles With Smiles, we've seen firsthand how running changes people and communities. We've watched shy newcomers become confident runners. We've seen strangers become best friends. We've witnessed the way a simple Wednesday morning run can be the anchor that gives someone's entire week structure, purpose, and joy.</p>
       <p>This is why we run. Not just for fitness. For community. For Alexandra. For the belief that when people run together, something more than fitness is built.</p>
-      <p>Join us. Register as a member. Show up on Wednesday or Saturday morning. And discover for yourself what running together can do.</p>
+      <p><a href="https://chat.whatsapp.com/L29mgr6a98aKrRBtgkZ8dg?s=cl&p=i&ilr=4">Join us </a>. Register as a member. Show up on Wednesday or Saturday morning. And discover for yourself what running together can do. View our full
+        <a href="/schedule">run schedule</a> for upcoming dates.</p>
     `,
   },
 ];
