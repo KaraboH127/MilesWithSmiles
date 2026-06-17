@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://miles-with-smiles.vercel.app/sitemap.xml
