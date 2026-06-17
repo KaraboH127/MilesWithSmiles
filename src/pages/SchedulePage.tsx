@@ -25,6 +25,10 @@ export default function SchedulePage() {
   const wedDates = getUpcomingDates(SITE_CONFIG.scheduleStartDate.wednesday, 3, 6);
   const satDates = getUpcomingDates(SITE_CONFIG.scheduleStartDate.saturday, 6, 6);
 
+  const allUpcoming = [...wedDates, ...satDates].sort((a, b) => a.getTime() - b.getTime());
+  const nextRun = allUpcoming[0];
+  const nextRunDay = nextRun?.getDay() === 3 ? "Wednesday 10km" : "Saturday 5km";
+
   return (
     <>
       <SEOHead
@@ -37,6 +41,14 @@ export default function SchedulePage() {
         backgroundImage={IMAGES.communityRun2}
         title="Run Schedule"
         description="Every Wednesday and Saturday, we take to the streets of Alexandra. Here is everything you need to show up."
+        meta={
+          nextRun ? (
+            <span className="inline-flex items-center gap-2 rounded-md border border-white/20 bg-white/10 px-4 py-2 text-sm text-white">
+              <Calendar size={16} />
+              Next run: {formatDate(nextRun)} · {nextRunDay}
+            </span>
+          ) : null
+        }
       >
         <div className="flex flex-wrap gap-4">
           <span className="inline-flex items-center gap-2 rounded-md border border-white/20 px-4 py-2 text-sm text-white/70">
