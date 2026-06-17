@@ -162,6 +162,8 @@ export default function BlogArticlePage() {
                       alt={related.title}
                       className="h-full w-full object-cover grayscale transition-all duration-300 group-hover:grayscale-0"
                       loading="lazy"
+                      width="16"
+                      height="9"
                     />
                   </div>
                   <div className="p-4">

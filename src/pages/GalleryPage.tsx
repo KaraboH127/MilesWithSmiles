@@ -109,6 +109,8 @@ export default function GalleryPage() {
                 src={image.src}
                 alt={image.alt}
                 loading="lazy"
+                width="800"
+                height="600"
                 className="h-auto w-full object-cover grayscale transition-all duration-300 group-hover:grayscale-0"
               />
               <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors duration-200 group-hover:bg-black/30">
@@ -171,6 +173,8 @@ export default function GalleryPage() {
             <img
               src={filteredImages[lightboxIndex]?.src}
               alt={filteredImages[lightboxIndex]?.alt}
+              width="800"
+              height="600"
               className="max-h-[75vh] w-auto rounded-md object-contain"
             />
             <div className="text-center">

@@ -168,6 +168,8 @@ export default function SchedulePage() {
               alt="Miles With Smiles community hike"
               className="h-full w-full object-cover grayscale transition-all duration-300 hover:grayscale-0"
               loading="lazy"
+              width="4"
+              height="3"
             />
           </div>
         </div>

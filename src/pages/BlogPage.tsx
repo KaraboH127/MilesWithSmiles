@@ -53,6 +53,8 @@ export default function BlogPage() {
                     alt={BLOG_POSTS[0].title}
                     className="h-full w-full object-cover grayscale transition-all duration-300 group-hover:grayscale-0"
                     loading="lazy"
+                    width="16"
+                    height="9"
                   />
                 </div>
                 <div className="flex flex-col justify-center p-6 lg:p-8">
@@ -99,6 +101,8 @@ export default function BlogPage() {
                     alt={post.title}
                     className="h-full w-full object-cover grayscale transition-all duration-300 group-hover:grayscale-0"
                     loading="lazy"
+                    width="16"
+                    height="9"
                   />
                 </div>
                 <div className="flex flex-1 flex-col p-6">

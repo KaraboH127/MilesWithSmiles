@@ -109,6 +109,8 @@ export default function AboutPage() {
                 alt="Community runners at Miles With Smiles"
                 className="h-full w-full object-cover grayscale transition-all duration-300 hover:grayscale-0"
                 loading="lazy"
+                width="16"
+                height="9"
               />
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -118,6 +120,8 @@ export default function AboutPage() {
                   alt="Runners celebrating together"
                   className="h-full w-full object-cover grayscale transition-all duration-300 hover:grayscale-0"
                   loading="lazy"
+                  width="1"
+                  height="1"
                 />
               </div>
               <div className="aspect-square overflow-hidden rounded-md">
@@ -126,6 +130,8 @@ export default function AboutPage() {
                   alt="Community hike with Miles With Smiles"
                   className="h-full w-full object-cover grayscale transition-all duration-300 hover:grayscale-0"
                   loading="lazy"
+                  width="1"
+                  height="1"
                 />
               </div>
             </div>
@@ -181,6 +187,8 @@ export default function AboutPage() {
               alt="Miles With Smiles runners after a race"
               className="h-full w-full object-cover grayscale transition-all duration-300 hover:grayscale-0"
               loading="lazy"
+              width="16"
+              height="9"
             />
           </div>
           <div>

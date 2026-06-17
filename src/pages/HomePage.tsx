@@ -179,6 +179,8 @@ export default function HomePage() {
               alt="Miles With Smiles community runners in Alexandra"
               className="h-full w-full object-cover grayscale transition-all duration-300 hover:grayscale-0"
               loading="lazy"
+              width="1"
+              height="1"
             />
           </div>
         </div>
@@ -341,6 +343,8 @@ export default function HomePage() {
                 alt={`Miles With Smiles community moment ${i + 1}`}
                 className="aspect-square h-full w-full object-cover grayscale transition-all duration-300 hover:grayscale-0"
                 loading="lazy"
+                width="1"
+                height="1"
               />
             </div>
           ))}
