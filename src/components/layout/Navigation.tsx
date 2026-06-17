@@ -25,6 +25,16 @@ export default function Navigation() {
     setIsOpen(false);
   }, [location.pathname]);
 
+    useEffect(() => {
+    if (!isOpen) return;
+    const handleClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (!target.closest("header")) setIsOpen(false);
+    };
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, [isOpen]);
+
   const isActive = (href: string) =>
     href === "/" ? location.pathname === "/" : location.pathname.startsWith(href);
 
