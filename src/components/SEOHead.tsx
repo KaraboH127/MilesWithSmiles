@@ -8,9 +8,10 @@ interface SEOHeadProps {
   description: string;
   canonical: string;
   ogImage?: string;
+  schema?: object;
 }
 
-export default function SEOHead({ title, description, canonical, ogImage }: SEOHeadProps) {
+export default function SEOHead({ title, description, canonical, ogImage, schema }: SEOHeadProps) {
   const image = ogImage ?? DEFAULT_IMAGE;
   const fullUrl = `${BASE_URL}${canonical}`;
   return (
@@ -25,6 +26,11 @@ export default function SEOHead({ title, description, canonical, ogImage }: SEOH
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+      {schema && (
+        <script type="application/ld+json">
+          {JSON.stringify(schema)}
+        </script>
+      )}
     </Helmet>
   );
 }

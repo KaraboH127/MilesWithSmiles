@@ -32,6 +32,22 @@ export default function BlogArticlePage() {
       ? related
       : BLOG_POSTS.filter((p) => p.slug !== post.slug).slice(0, 2);
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.excerpt,
+    "image": post.image,
+    "datePublished": "2026-06-01",
+    "author": { "@type": "Organization", "name": "Miles With Smiles Social Running Club" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Miles With Smiles",
+      "logo": { "@type": "ImageObject", "url": "https://miles-with-smiles.vercel.app/images/MilesWithSmilesLogo.jpg" }
+    },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": `https://miles-with-smiles.vercel.app/blog/${post.slug}` }
+  };
+
   return (
     <>
       <SEOHead
@@ -39,6 +55,7 @@ export default function BlogArticlePage() {
         description={post.metaDescription}
         canonical={`/blog/${post.slug}`}
         ogImage={post.image}
+        schema={articleSchema}
       />
       <section className="relative pb-0 pt-32" aria-label="Article header">
         <div className="relative h-64 overflow-hidden sm:h-80 lg:h-96">
