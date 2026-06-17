@@ -2,7 +2,7 @@
  * HOME PAGE
  * Hero → Social proof → About → Schedule → Benefits → WhatsApp → Gallery → Join CTA
  */
-
+import SEOHead from '../components/SEOHead';
 import { Link } from "react-router-dom";
 import {
   ArrowDown,
@@ -78,6 +78,11 @@ export default function HomePage() {
 
   return (
     <>
+      <SEOHead
+        title="Miles With Smiles | Social Running Club in Alexandra, Johannesburg"
+        description="Join Miles With Smiles, a social running club in Alexandra, Johannesburg. Weekly 5km and 10km group runs, monthly hikes, and a supportive community for all levels."
+        canonical="/"
+      />
       <Hero
         fullScreen
         backgroundImage={IMAGES.hero}

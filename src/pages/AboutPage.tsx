@@ -1,7 +1,7 @@
 /**
  * ABOUT PAGE
  */
-
+import SEOHead from '../components/SEOHead';
 import { Globe, Heart, Link2, Repeat } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { IMAGES } from "../config/site";
@@ -66,6 +66,11 @@ const MISSION_ITEMS: { icon: LucideIcon; title: string; desc: string }[] = [
 export default function AboutPage() {
   return (
     <>
+      <SEOHead
+        title="About Us | Miles With Smiles Social Running Club Alexandra"
+        description="Learn about Miles With Smiles Social Run Club — born on the streets of Alexandra, built on community, consistency, and shared miles."
+        canonical="/about"
+      />
       <Hero
         eyebrow="About Us"
         backgroundImage={IMAGES.about}

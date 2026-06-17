@@ -1,7 +1,7 @@
 /**
  * BLOG ARTICLE PAGE
  */
-
+import SEOHead from '../components/SEOHead';
 import { useParams, Link, Navigate } from "react-router-dom";
 import { ArrowLeft, ArrowRight, Clock, Footprints, Tag, MessageCircle } from "lucide-react";
 import { BLOG_POSTS } from "../data/blogPosts";
@@ -34,6 +34,12 @@ export default function BlogArticlePage() {
 
   return (
     <>
+      <SEOHead
+        title={post.seoTitle}
+        description={post.metaDescription}
+        canonical={`/blog/${post.slug}`}
+        ogImage={post.image}
+      />
       <section className="relative pb-0 pt-32" aria-label="Article header">
         <div className="relative h-64 overflow-hidden sm:h-80 lg:h-96">
           <img

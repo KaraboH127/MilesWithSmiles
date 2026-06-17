@@ -1,7 +1,7 @@
 /**
  * GALLERY PAGE
  */
-
+import SEOHead from '../components/SEOHead';
 import { useState, useCallback } from "react";
 import { X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 import { IMAGES } from "../config/site";
@@ -52,6 +52,11 @@ export default function GalleryPage() {
 
   return (
     <>
+      <SEOHead
+        title="Gallery | Miles With Smiles Social Running Club Alexandra"
+        description="Photos from our weekly runs, monthly hikes, and community events in Alexandra, Johannesburg."
+        canonical="/gallery"
+      />
       <Hero
         eyebrow="Our Community"
         backgroundImage={IMAGES.raceDay1}

@@ -1,7 +1,7 @@
 /**
  * SCHEDULE PAGE
  */
-
+import SEOHead from '../components/SEOHead';
 import { Calendar, Clock, MapPin, MessageCircle } from "lucide-react";
 import { SITE_CONFIG, IMAGES } from "../config/site";
 import {
@@ -26,6 +26,11 @@ export default function SchedulePage() {
 
   return (
     <>
+      <SEOHead
+        title="Run Schedule | Miles With Smiles Alexandra — Wednesday 10km, Saturday 5km"
+        description="Join our weekly runs in Alexandra. Wednesday 10km and Saturday 5km community runs from Soothe (Old Megalo). Meet at 06:30, run starts 07:00."
+        canonical="/schedule"
+      />
       <Hero
         eyebrow="When We Run"
         backgroundImage={IMAGES.communityRun2}

@@ -1,7 +1,7 @@
 /**
  * BLOG PAGE
  */
-
+import SEOHead from '../components/SEOHead';
 import { Link } from "react-router-dom";
 import { ArrowRight, Clock, Tag } from "lucide-react";
 import { BLOG_POSTS } from "../data/blogPosts";
@@ -12,6 +12,11 @@ const CATEGORIES = ["All", ...Array.from(new Set(BLOG_POSTS.map((p) => p.categor
 export default function BlogPage() {
   return (
     <>
+      <SEOHead
+        title="Running Blog | Miles With Smiles Social Run Club Alexandra"
+        description="Running tips, training guides, and community stories from Miles With Smiles Social Run Club in Alexandra, Johannesburg."
+        canonical="/blog"
+      />
       <Hero
         eyebrow="Knowledge and Community"
         title="Running Insights and Community Stories"

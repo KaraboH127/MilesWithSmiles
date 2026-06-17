@@ -1,7 +1,7 @@
 /**
  * CONTACT PAGE
  */
-
+import SEOHead from '../components/SEOHead';
 import { ArrowRight, Clock, Mail, MapPin, MessageCircle, Share2, Camera, Footprints } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { SITE_CONFIG } from "../config/site";
@@ -59,6 +59,11 @@ const CONTACT_CHANNELS: {
 export default function ContactPage() {
   return (
     <>
+      <SEOHead
+        title="Contact | Miles With Smiles Social Running Club Alexandra"
+        description="Get in touch with Miles With Smiles. Join our WhatsApp community, follow us on social media, or show up at Soothe (Old Megalo) in Alexandra."
+        canonical="/contact"
+      />
       <Hero
         eyebrow="Get in Touch"
         title="Let's Connect"
