@@ -23,15 +23,17 @@ import { useEffect } from "react";
 import Layout from "./components/layout/Layout";
 
 // ─── PAGES ───────────────────────────────────────────────────────────────────
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import SchedulePage from "./pages/SchedulePage";
-import GalleryPage from "./pages/GalleryPage";
-import BlogPage from "./pages/BlogPage";
-import BlogArticlePage from "./pages/BlogArticlePage";
-import ContactPage from "./pages/ContactPage";
-import ThankYouPage from "./pages/ThankYouPage";
-import NotFoundPage from "./pages/NotFoundPage";
+import { lazy, Suspense } from "react";
+
+const HomePage        = lazy(() => import("./pages/HomePage"));
+const AboutPage       = lazy(() => import("./pages/AboutPage"));
+const SchedulePage    = lazy(() => import("./pages/SchedulePage"));
+const GalleryPage     = lazy(() => import("./pages/GalleryPage"));
+const BlogPage        = lazy(() => import("./pages/BlogPage"));
+const BlogArticlePage = lazy(() => import("./pages/BlogArticlePage"));
+const ContactPage     = lazy(() => import("./pages/ContactPage"));
+const ThankYouPage    = lazy(() => import("./pages/ThankYouPage"));
+const NotFoundPage    = lazy(() => import("./pages/NotFoundPage"));
 
 // ─── SCROLL TO TOP ON ROUTE CHANGE ───────────────────────────────────────────
 /**
@@ -51,81 +53,83 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <Layout>
-              <HomePage />
-            </Layout>
-          }
-        />
-        <Route
-          path="/about"
-          element={
-            <Layout>
-              <AboutPage />
-            </Layout>
-          }
-        />
-        <Route
-          path="/schedule"
-          element={
-            <Layout>
-              <SchedulePage />
-            </Layout>
-          }
-        />
-        <Route
-          path="/gallery"
-          element={
-            <Layout>
-              <GalleryPage />
-            </Layout>
-          }
-        />
-        <Route
-          path="/blog"
-          element={
-            <Layout>
-              <BlogPage />
-            </Layout>
-          }
-        />
-        <Route
-          path="/blog/:slug"
-          element={
-            <Layout>
-              <BlogArticlePage />
-            </Layout>
-          }
-        />
-        <Route
-          path="/contact"
-          element={
-            <Layout>
-              <ContactPage />
-            </Layout>
-          }
-        />
-        <Route
-          path="/thank-you"
-          element={
-            <Layout>
-              <ThankYouPage />
-            </Layout>
-          }
-        />
-        {/* 404 fallback */}
-        <Route
-          path="*"
-          element={
-            <Layout>
-              <NotFoundPage />
-            </Layout>
-          }
-        />
-      </Routes>
+        <Suspense fallback={<div style={{ minHeight: "100vh", background: "#000" }} />}>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Layout>
+                  <HomePage />
+                </Layout>
+              }
+            />
+            <Route
+              path="/about"
+              element={
+                <Layout>
+                  <AboutPage />
+                </Layout>
+              }
+            />
+            <Route
+              path="/schedule"
+              element={
+                <Layout>
+                  <SchedulePage />
+                </Layout>
+              }
+            />
+            <Route
+              path="/gallery"
+              element={
+                <Layout>
+                  <GalleryPage />
+                </Layout>
+              }
+            />
+            <Route
+              path="/blog"
+              element={
+                <Layout>
+                  <BlogPage />
+                </Layout>
+              }
+            />
+            <Route
+              path="/blog/:slug"
+              element={
+                <Layout>
+                  <BlogArticlePage />
+                </Layout>
+              }
+            />
+            <Route
+              path="/contact"
+              element={
+                <Layout>
+                  <ContactPage />
+                </Layout>
+              }
+            />
+            <Route
+              path="/thank-you"
+              element={
+                <Layout>
+                  <ThankYouPage />
+                </Layout>
+              }
+            />
+            {/* 404 fallback */}
+            <Route
+              path="*"
+              element={
+                <Layout>
+                  <NotFoundPage />
+                </Layout>
+              }
+            />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 }
