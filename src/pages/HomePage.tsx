@@ -149,14 +149,6 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <Section variant="dark" spacing="none" className="border-y border-white/20 py-4">
-        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm text-white/60">
-          <IconText icon={MapPin}>Alexandra, Johannesburg</IconText>
-          <span className="hidden h-4 w-px bg-white/20 sm:block" />
-          <IconText icon={Mountain}>Monthly Hikes</IconText>
-        </div>
-      </Section>
-
       <Section aria-labelledby="about-heading">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
